@@ -15,7 +15,7 @@ export const content = {
     about: {
         intro: {
             title: "Empowering Innovation. Enabling Growth. Transforming Industries.",
-            text1: "Since our inception, Mind Group has been at the forefront of business evolution. What began in 1992 as CRV Consultants was born from a visionary foresight: the need for a structured, strategic approach to talent and business infrastructure in an emerging global market. Rebranded in 2005 as Mind Group, we have evolved into a diversified holding company dedicated to providing the backbone of sustainable business development.",
+            text1: "Since our inception, Mind Group has been at the forefront of business evolution. Founded in 1992 from visionary foresight, we identified the need for a structured, strategic approach to talent and business infrastructure in an emerging global market. Rebranded in 2005 as Mind Group, we have evolved into a diversified holding company dedicated to providing the backbone of sustainable business development.",
             missionQuote: "Our mission is to be your one-stop solution, blending decades of wisdom with modern innovation to build businesses that last."
         },
         expertise: [
@@ -70,7 +70,7 @@ export const content = {
             values: "Our values are the foundation of our long-term commitments and the reason we have thrived since 1992."
         },
         timeline: [
-            { year: "1992", title: "CRV Consultants", description: "Founded with a focus on human capital." },
+            { year: "1992", title: "Talent Services", description: "Founded with a focus on human capital." },
             { year: "2005", title: "Mind Group", description: "Rebranded to diversify services." },
             { year: "2025", title: "Global Scale", description: "Providing diverse services across continents." }
         ]
