@@ -1,8 +1,18 @@
 import { content } from '../data/content';
 import TeamCard from '../components/TeamCard';
+import { useEffect } from 'react';
 
 const Leadership = () => {
     const { foundingTeam, experts } = content.leadership;
+
+    // Set page title and meta description
+    useEffect(() => {
+        document.title = 'Leadership & Governance | Mind Group Global';
+        const metaDescription = document.querySelector('meta[name="description"]');
+        if (metaDescription) {
+            metaDescription.setAttribute('content', 'Meet the leadership team and experts at Mind Group Global. Industry veterans with decades of experience driving innovation and excellence across Human Capital, Engineering, Technology, and Operations.');
+        }
+    }, []);
 
     return (
         <div className="bg-brand-light-gray min-h-screen">
@@ -25,9 +35,9 @@ const Leadership = () => {
                     <div className="h-px bg-gray-300 flex-grow"></div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 items-stretch max-w-5xl mx-auto">
                     {foundingTeam.map((member, idx) => (
-                        <TeamCard key={idx} member={member} />
+                        <TeamCard key={idx} member={member} foundingTeam={true} />
                     ))}
                 </div>
 
@@ -37,9 +47,9 @@ const Leadership = () => {
                     <div className="h-px bg-gray-300 flex-grow"></div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div className="flex flex-wrap justify-center gap-4">
                     {experts.map((member, idx) => (
-                        <TeamCard key={idx} member={member} simple={true} />
+                        <TeamCard key={idx} member={member} simple={true} index={idx} />
                     ))}
                 </div>
             </section>

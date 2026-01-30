@@ -2,17 +2,19 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, ChevronDown, Phone, MapPin, Globe } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { content } from '../data/content';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { contact } = content;
 
     return (
         <header className="w-full">
             {/* 1. Top Dark Bar */}
             <div className="bg-charcoal text-white text-xs py-2 px-4 md:px-12 flex justify-between items-center">
                 <div className="flex gap-4">
-                    <span className="flex items-center gap-1"><MapPin size={12} className="text-primary" /> Mind Group HQ, Bangalore</span>
-                    <span className="flex items-center gap-1"><Phone size={12} className="text-primary" /> +91 123 456 7890</span>
+                    <span className="flex items-center gap-1"><MapPin size={12} className="text-primary" /> Jayanagar, Bangalore</span>
+                    <span className="flex items-center gap-1"><Phone size={12} className="text-primary" /> {contact.phone}</span>
                 </div>
                 <div className="hidden md:flex items-center gap-2 cursor-pointer hover:text-primary transition-colors">
                     <Globe size={12} />

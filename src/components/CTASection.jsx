@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import { FiArrowRight } from 'react-icons/fi';
+import { useLeadModal } from '../context/LeadModalContext';
 
 const CTASection = () => {
+    const { openModal } = useLeadModal();
     return (
         <section className="py-24 bg-gradient-to-br from-brand-orange to-orange-600 relative overflow-hidden">
             {/* Abstract Background Shapes */}
@@ -21,14 +22,15 @@ const CTASection = () => {
                         Ready to Transform Your Business?
                     </h2>
                     <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto font-light">
-                        Let's discuss how Mind Group Advisors can support your growth through our integrated solutions.
+                        Let's discuss how Mind Group Global can support your growth through our integrated solutions.
                     </p>
-                    <Link
-                        to="/contact"
+                    <button
+                        type="button"
+                        onClick={() => openModal()}
                         className="inline-flex items-center gap-3 bg-white text-brand-orange px-10 py-5 rounded-full font-bold text-lg hover:bg-brand-navy hover:text-white transition-all shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
                     >
                         Get In Touch <FiArrowRight />
-                    </Link>
+                    </button>
                 </motion.div>
             </div>
         </section>

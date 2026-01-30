@@ -1,4 +1,4 @@
-# Mind Group Advisors - Deployment Guide
+# Mind Group Global - Deployment Guide
 
 ## Shared Hosting Deployment (cPanel/GoDaddy/Hostinger)
 

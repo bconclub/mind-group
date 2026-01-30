@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
+import { FiMenu, FiX } from 'react-icons/fi';
+import { useLeadModal } from '../context/LeadModalContext';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const { openModal } = useLeadModal();
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
 
@@ -38,8 +40,8 @@ const Navbar = () => {
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-3 group">
                     <img
-                        src="/MG Logo.png"
-                        alt="Mind Group Advisors"
+                        src="/assets/MG Logo.png"
+                        alt="Mind Group Global"
                         className="h-[63px] w-auto object-contain group-hover:scale-105 transition-transform"
                     />
                 </Link>
@@ -59,12 +61,13 @@ const Navbar = () => {
                             <span className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-orange transition-all duration-300 group-hover:w-full ${location.pathname === link.path ? 'w-full' : ''}`}></span>
                         </Link>
                     ))}
-                    <Link
-                        to="/contact"
+                    <button
+                        type="button"
+                        onClick={() => openModal()}
                         className="px-5 py-2 bg-brand-orange text-white text-xs font-bold rounded-lg hover:bg-orange-600 transition-colors shadow-lg hover:shadow-orange-500/30 transform hover:-translate-y-0.5"
                     >
                         Get In Touch
-                    </Link>
+                    </button>
                 </nav>
 
                 {/* Mobile Toggle */}
@@ -97,6 +100,13 @@ const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
+                            <button
+                                type="button"
+                                onClick={() => { openModal(); setIsOpen(false); }}
+                                className="mt-2 px-5 py-2.5 bg-brand-orange text-white text-sm font-bold rounded-lg w-fit"
+                            >
+                                Get In Touch
+                            </button>
                         </div>
                     </motion.div>
                 )}

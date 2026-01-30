@@ -20,30 +20,43 @@ export const content = {
         },
         expertise: [
             {
-                title: "Business Enablement",
-                desc: "Streamlining operations to help organizations scale with confidence.",
-                image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                title: "Recruitment & Counselling",
+                desc: "Our legacy service, connecting multinational corporations with top-tier talent and guiding individuals toward their career aspirations.",
+                image: "/assets/Human%20Capital.jpg",
+                category: "HUMAN CAPITAL",
+                brands: [
+                    { name: "Mind Search Consultants", logo: "/brand logos/Mind Search.webp", url: "https://mindgroupsolutions.com/" },
+                    { name: "Mind Select Consultants", logo: "/brand logos/Mind Select.webp", url: "https://mindgroupsolutions.com/" },
+                    { name: "Open Mind Consultants", logo: "/brand logos/Open Mind.png", url: "https://mindgroupsolutions.com/" }
+                ]
             },
             {
                 title: "Engineering Services",
                 desc: "Delivering technical excellence and innovative solutions for complex projects.",
-                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                category: "ENGINEERING",
+                brands: [
+                    { name: "Digileum", logo: "/brand logos/digilium.png", url: "https://digileum.in/" }
+                ]
             },
             {
                 title: "PBOMT",
                 fullTitle: "Project Build, Operate, Maintain & Transfer",
                 desc: "Providing end-to-end lifecycle management for critical infrastructure.",
-                image: "/PCOT.webp"
+                image: "/assets/PCOT.webp",
+                category: "OPERATIONS",
+                brands: [
+                    { name: "MSC", logo: "/brand logos/msc logo v1.png", url: "https://mscdubai.ae/" }
+                ]
             },
             {
                 title: "Data Centre Transformation",
                 desc: "Revolutionizing how businesses store, manage, and leverage their most valuable asset—data.",
-                image: "/Data center.webp"
-            },
-            {
-                title: "Recruitment & Counselling",
-                desc: "Our legacy service, connecting multinational corporations with top-tier talent and guiding individuals toward their career aspirations.",
-                image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                image: "/assets/Data center.webp",
+                category: "TECHNOLOGY",
+                brands: [
+                    { name: "Blue Peak", logo: "/brand logos/Blue PEak.png", url: "https://blue-peak.us/" }
+                ]
             }
         ],
         partners: {
@@ -77,35 +90,33 @@ export const content = {
     },
     leadership: {
         foundingTeam: [
-            { name: "Jennifer Hill", role: "Founding Team", image: "/team/Jennifer Hill.png" },
-            { name: "Sheaker BR", role: "Founding Team", image: "/team/B.R. Sheaker.jpg" },
-            { name: "Deepa Murthy", role: "Founding Team", image: "/team/Deep Murthy.jpg" },
-            { name: "Raja Nagarajan", role: "Founding Team", image: "" },
-            { name: "Venkat N Pakala", role: "Founding Team", image: "" }
+            { name: "B.R. Sheaker", role: "Co-Founder & MD", image: "/team/B.R. Sheaker.jpg", bio: "Co-Founder and Managing Director with over 20 years of leadership experience. Electronics Engineer with expertise from Philips and TVS Electronics. Drives the group's recruitment strategy.", linkedin: "https://www.linkedin.com/in/sheaker-br-b7b963/", twitter: "" },
+            { name: "Deepa Murthy", role: "Co-Founder (1992)", image: "/team/Deep Murthy.jpg", bio: "Co-Founder since 1992 with a Masters in Human Resources. Strategic architect behind the group's expansion and diversification. Serves as independent director on multiple corporate boards.", linkedin: "https://www.linkedin.com/in/deepa-murthy/", twitter: "" },
+            { name: "Venkat N Pakala", role: "Co-Founder", image: "", bio: "Founding Team Member and Director at OpenMind Consultants. Former senior executive in banking and financial services with Mashreq Bank and Misys. Expertise in international operations, IT strategy, and business setup across South Asian markets.", linkedin: "https://www.linkedin.com/in/venkat-pakala-97247115", twitter: "" }
         ],
         experts: [
-            { name: "CA M Krishnamurthy", role: "Finance & Accounts", image: "" },
-            { name: "Manoj Rajan", role: "Auditing & Secretarial", image: "" },
-            { name: "Mandanna KU", role: "Infrastructure", image: "" },
-            { name: "Saravanan S", role: "Manufacturing & Engineering", image: "" },
-            { name: "Darshan Sangodkar", role: "Digital & IT", image: "" },
-            { name: "Raghu Panyam", role: "Product Engineering", image: "" },
-            { name: "Madhukar Tallam", role: "AI & Data Center", image: "" },
-            { name: "Ashish Joshi", role: "Automotive", image: "" },
-            { name: "Satish Kumar & Kamalashree", role: "Human Resources", image: "" }
+            { name: "CA M Krishnamurthy", role: "Finance & Accounts", image: "", linkedin: "", twitter: "" },
+            { name: "Manoj Rajan", role: "Auditing & Secretarial", image: "", linkedin: "", twitter: "" },
+            { name: "Mandanna KU", role: "Infrastructure", image: "", linkedin: "", twitter: "" },
+            { name: "Saravanan S", role: "Manufacturing & Engineering", image: "", linkedin: "", twitter: "" },
+            { name: "Darshan Sangodkar", role: "Digital & IT", image: "", linkedin: "", twitter: "" },
+            { name: "Raghu Panyam", role: "Product Engineering", image: "", linkedin: "", twitter: "" },
+            { name: "Madhukar Tallam", role: "AI & Data Center", image: "", linkedin: "", twitter: "" },
+            { name: "Ashish Joshi", role: "Automotive", image: "", linkedin: "", twitter: "" },
+            { name: "Satish Kumar & Kamalashree", role: "Human Resources", image: "", linkedin: "", twitter: "" }
         ]
     },
     groupCompanies: [
-        { name: "Mind Search Consultants", desc: "Executive Search & Recruitment", logo: "" },
-        { name: "Mind Select Consultants", desc: "Specialized Talent Acquisition", logo: "" },
-        { name: "Open Mind Consultants", desc: "HR Consulting & Advisory", logo: "" },
-        { name: "Mind Search Consultants – Dubai", desc: "Middle East Operations", logo: "/brand logos/msc logo.png" },
-        { name: "Digileum", desc: "Digital Transformation Specialists", logo: "/brand logos/digilium.png" },
-        { name: "Blue-Peak.us", desc: "US Market Solutions", logo: "/brand logos/Blue PEak.png" }
+        { name: "Mind Search Consultants", desc: "Executive Search & Recruitment", logo: "/brand logos/Mind Search.webp", url: "https://mindgroupsolutions.com/" },
+        { name: "Mind Select Consultants", desc: "Specialized Talent Acquisition", logo: "/brand logos/Mind Select.webp", url: "https://mindgroupsolutions.com/" },
+        { name: "Open Mind Consultants", desc: "HR Consulting & Advisory", logo: "/brand logos/Open Mind.png", url: "https://mindgroupsolutions.com/" },
+        { name: "Mind Search Consultants – Dubai", desc: "Middle East Operations", logo: "/brand logos/msc logo v1.png", url: "https://mscdubai.ae/" },
+        { name: "Digileum", desc: "Digital Transformation Specialists", logo: "/brand logos/digilium.png", url: "https://digileum.in/" },
+        { name: "Blue-Peak.us", desc: "US Market Solutions", logo: "/brand logos/Blue PEak.png", url: "https://blue-peak.us/" }
     ],
     contact: {
-        phone: "+91 123 456 7890",
+        phone: "+91 80 4022 6222",
         email: "info@mindgroupsolutions.com",
-        address: "Mind Group Headquarters, Bangalore, India"
+        address: "No 315, 14th Cross, 9th Main, II Block, Jayanagar, Bangalore 560 011"
     }
 };

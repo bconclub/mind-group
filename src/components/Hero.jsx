@@ -8,7 +8,7 @@ const Hero = () => {
             {/* Background Image with Parallax Effect could go here if we had logic, but simple clean bg for now */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat transform scale-105"
-                style={{ backgroundImage: "url('/Mindgroup hero New.webp')" }}
+                style={{ backgroundImage: "url('/assets/Mindgroup hero New.webp')" }}
             >
             </div>
 
@@ -52,7 +52,7 @@ const Hero = () => {
                             </motion.span>
                         </h1>
                         <p className="text-lg text-gray-200 mb-8 max-w-2xl md:mx-auto leading-relaxed font-light">
-                            Integrated business solutions across Human Capital, Engineering, Technology, and Operations. Empowering global growth through strategic innovation.
+                            Integrated Business Solutions across Human Capital, Engineering, Technology, and Operations.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-start md:justify-center">
