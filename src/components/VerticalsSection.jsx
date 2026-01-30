@@ -115,6 +115,13 @@ const VerticalsSection = () => {
                                             src={vertical.image}
                                             alt={vertical.title}
                                             className="w-full h-full object-cover"
+                                            onError={(e) => {
+                                                console.error(`Failed to load image: ${vertical.image}`, e);
+                                                // Fallback to .jpg if .webp fails
+                                                if (vertical.image.endsWith('.webp')) {
+                                                    e.target.src = vertical.image.replace('.webp', '.jpg');
+                                                }
+                                            }}
                                         />
                                     </div>
                                 </motion.div>
